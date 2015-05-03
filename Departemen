@@ -1,0 +1,28 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package departemen;
+
+/**
+ *
+ * @author Yulius Edward
+ */
+public class Departemen {
+    protected String id;
+    protected String nama_dept;
+public Departemen(){
+}
+public Departemen( String newid){
+    id=newid;
+            }
+public Departemen(String newid, String newnama_dept){
+    id=newid;
+    nama_dept=newnama_dept;
+}
+public void tampilkaninfo(){
+    System.out.println("Id :" + id);
+    System.out.println("Nama Departemen :" +nama_dept);
+}
+} 
