@@ -1,0 +1,39 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package departemen;
+
+/**
+ *
+ * @author Yulius Edward
+ */
+public class Division extends Departemen {
+    protected String Kepaladivisi;
+    
+public Division(){
+super();
+}
+public Division (String id){
+    super(id);
+}
+public Division (String id, String nama_dept){
+    super(id,nama_dept);
+}
+public Division(String id, String nama_dept, String newKepalaDiv){
+    super(id, nama_dept);
+    Kepaladivisi=newKepalaDiv;
+    
+}
+
+public void tampilkaninfogaji(int Gaji){
+    System.out.println("Id :"+id);
+    System.out.println("Nama Departemen :" +nama_dept);
+    System.out.println("Kepala Divisi :"+Kepaladivisi);
+    System.out.println("Gaji :"+Gaji);
+}
+public void HitungGaji(){
+    
+}
+}
