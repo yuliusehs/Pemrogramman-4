@@ -1,0 +1,35 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package departemen;
+
+/**
+ *
+ * @author Yulius Edward
+ */
+public class Main {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Departemen departemen1 = new Departemen();
+        Departemen departemen2 = new Departemen ("A1");
+        Departemen departemen3 = new Departemen ("A2, Keuangan");
+        
+        Division divisi1 = new Division("A3","Tata Usaha","Pa Suharjo");
+        Division divisi2 = new Division();
+        
+        departemen1.tampilkaninfo();
+        departemen2.tampilkaninfo();
+        departemen3.tampilkaninfo();
+        
+        divisi1.tampilkaninfo();
+        divisi1.HitungGaji();
+        divisi2.tampilkaninfo();
+        divisi2.HitungGaji();
+    }
+}
+
